@@ -7,11 +7,11 @@ let info: string | number;
 // "É um número" se o valor for do tipo número.
 // Teste a função com os valores "TypeScript" e 2024.
 const wordOrNumber = (word: string | number) => {
-    if (typeof(word) === "string") {
-        console.log("É uma string")
-    } else if (typeof(word) === "number") {
-        console.log("É um número")
-    }
+  if (typeof(word) === "string") {
+    console.log("É uma string")
+  } else if (typeof(word) === "number") {
+    console.log("É um número")
+  }
 };
 
 wordOrNumber("Typescript")
