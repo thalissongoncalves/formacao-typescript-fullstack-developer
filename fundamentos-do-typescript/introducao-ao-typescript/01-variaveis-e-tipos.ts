@@ -1,5 +1,5 @@
 export {};
-let s: string = 'b'
+let s: string = 's'
 let n: number = 2
 let b: boolean = true
 let sn: string | number = 2

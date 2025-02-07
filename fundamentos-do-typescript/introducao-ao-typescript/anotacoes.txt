@@ -1,0 +1,11 @@
+npm i -g typescript (Faz a instalação do Typescript globalmente).
+
+npm init --y (Gera o package.json).
+
+npm i -D typescript (Instala como dependencia de desenvolvimento o typescript).
+
+npm i -D ts-node-dev (Instala uma ferramenta que faz ser possível executar o typescript file usando o node)
+
+npx tsc --init (Inicializa o typescript antes de começar a codar no projeto).
+
+ts-node-dev {file} (Executa o código typescript | Pode criar um script no package.json "ts-node-dev" e depois executar o npm run dev {file} se quiser)
