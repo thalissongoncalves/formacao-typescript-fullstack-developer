@@ -1,3 +1,4 @@
+export {};
 // const num: number = 13;
 
 // if (num > 15) {
