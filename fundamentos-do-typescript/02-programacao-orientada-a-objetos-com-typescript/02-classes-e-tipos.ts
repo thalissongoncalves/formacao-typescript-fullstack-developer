@@ -1,3 +1,5 @@
+export {}
+
 class Account {
   name: string
   accountNumber: number

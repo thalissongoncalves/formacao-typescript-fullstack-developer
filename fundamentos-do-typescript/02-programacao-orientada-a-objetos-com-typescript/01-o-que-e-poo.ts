@@ -1,3 +1,5 @@
+export {}
+
 class User {
   name: string = 'Nath'
   age: number = 32
