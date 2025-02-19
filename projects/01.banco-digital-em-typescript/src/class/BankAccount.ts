@@ -1,4 +1,4 @@
-export class BankAccount {
+export abstract class BankAccount {
   private readonly name: string;
   private readonly accountNumber: number;
   private balance: number = 0;
