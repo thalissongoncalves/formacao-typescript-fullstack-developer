@@ -6,7 +6,9 @@ export class SavingsAccount extends BankAccount {
   }
 
   // Deposita um rendimento de 0.5%, vai ser utilizando para rendimento de 0.5% ao mês
-  applyInterest = () => {
-    this.deposit(this.getBalance() * 0.005)
+  applyInterest = (): void => {
+    if (this.validateStatus()) {
+      this.deposit(this.getBalance() * 0.005)
+    }
   }
 }
