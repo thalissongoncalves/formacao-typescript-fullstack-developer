@@ -10,8 +10,7 @@ export class BusinessAccount extends BankAccount {
     if (this.validateStatus()) {
       this.deposit(value)
       return `Empréstimo feito com sucesso, seu saldo é: R$${this.getBalance()}`
-    } else {
-      throw new Error("Conta inválida.")
     }
+    throw new Error("Conta inválida.")
   }
 }

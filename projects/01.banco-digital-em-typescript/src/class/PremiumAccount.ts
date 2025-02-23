@@ -6,8 +6,9 @@ export class PremiumAccount extends BankAccount {
   }
 
   // Tem um bônus de 5% em todos os depósitos
-  premiumDeposit = (value: number):string => {
-    this.deposit((value * 0.05) + value)
-    return `Depósito Premium feito com sucesso, seu saldo é: R$${this.getBalance()}`
+  premiumDeposit = (value: number): string => {
+    const bonus = value * 0.05
+    this.deposit(value + bonus)
+    return `Depósito Premium de R$${value} feito com sucesso! Bônus de R$${bonus.toFixed(2)} aplicado. Saldo atual: R$${this.getBalance()}`
   }
 }
