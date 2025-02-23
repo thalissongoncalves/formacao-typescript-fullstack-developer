@@ -27,3 +27,6 @@ savingsAccount.applyInterest()
 
 // Empréstimo na conta empresarial
 businessAccount.getLoan(10000)
+
+// Bônus de depósito na conta premium
+premiumAccount.premiumDeposit(100)
