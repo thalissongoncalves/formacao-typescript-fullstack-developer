@@ -26,9 +26,14 @@ export abstract class BankAccount {
   }
 
   // Transfere dinheiro para outra conta
-  transfer = (value: number, targetAccount: BankAccount) => {
-    targetAccount.balance += value
-    this.balance -= value
+  transfer = (value: number, targetAccount: BankAccount): string => {
+    if (this.balance >= value) {
+      targetAccount.balance += value
+      this.balance -= value
+      return `Transferência realizada com sucesso!`
+    } else {
+      return `Seu saldo é insuficiente para a transferência ser realizada.`
+    }
   }
 
   // Retorna o saldo
