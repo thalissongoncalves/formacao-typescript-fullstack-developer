@@ -24,3 +24,6 @@ savingsAccount.transfer(5, businessAccount)
 
 // Rendimento à conta poupança
 savingsAccount.applyInterest()
+
+// Empréstimo na conta empresarial
+businessAccount.getLoan(10000)
