@@ -21,3 +21,6 @@ savingsAccount.withdraw(75)
 businessAccount.transfer(5, premiumAccount)
 premiumAccount.transfer(5, savingsAccount)
 savingsAccount.transfer(5, businessAccount)
+
+// Rendimento à conta poupança
+savingsAccount.applyInterest()
