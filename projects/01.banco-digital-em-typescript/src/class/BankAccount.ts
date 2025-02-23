@@ -28,6 +28,7 @@ export abstract class BankAccount {
   // Transfere dinheiro para outra conta
   transfer = (value: number, targetAccount: BankAccount) => {
     targetAccount.balance += value
+    this.balance -= value
   }
 
   // Retorna o saldo
