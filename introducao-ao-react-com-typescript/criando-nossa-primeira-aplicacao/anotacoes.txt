@@ -1,0 +1,1 @@
+npm create vite@latest my-react-app (Como o create-react-app foi descontinuado, usa-se o vite para criar os arquivos base de app react)
