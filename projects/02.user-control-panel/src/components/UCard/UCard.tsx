@@ -1,12 +1,16 @@
 import { Card } from "@chakra-ui/react"
 
-export const UCard = () => {
+interface ICard {
+  name: string,
+  email: string
+}
+
+export const UCard = ({name, email}: ICard) => {
   return(
-    <Card.Root>
-      <Card.Header>Usuário 1</Card.Header>
+    <Card.Root minWidth='300px' maxWidth='500px'>
       <Card.Body>
-        Nome: Thalisson G. <br/>
-        E-mail: thalissongdev@gmail.com
+        Nome: {name} <br/>
+        E-mail: {email}
       </Card.Body>
     </Card.Root>
   )
