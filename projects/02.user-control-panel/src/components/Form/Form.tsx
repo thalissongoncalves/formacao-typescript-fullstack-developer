@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Input } from '@chakra-ui/react';
+import { Box, Button, Center, Heading, Input } from '@chakra-ui/react';
 import { useState } from 'react';
 import { UCard } from '../UCard/UCard';
 import { welcome } from '../../services/welcome';
@@ -31,13 +31,13 @@ export const Form = () => {
     <Heading textAlign='center'>Usuários Cadastrados:</Heading>
     {
       user[0].name === '' ? <Box display='none'></Box> : 
-        <Box display='flex' flexDirection='row' gap='4' width='100%' flexWrap='wrap' padding='10px'>
+        <Center display='flex' flexDirection='row' width='100%' flexWrap='wrap' padding='10px' gap='2'>
           {
             user.map((u, index) => 
               <UCard name={u.name} email={u.email} key={index}></UCard>
             )
           }
-        </Box>
+        </Center>
     }
     </>
   )

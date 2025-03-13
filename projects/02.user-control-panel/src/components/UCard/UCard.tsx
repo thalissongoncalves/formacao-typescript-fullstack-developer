@@ -7,7 +7,7 @@ interface ICard {
 
 export const UCard = ({name, email}: ICard) => {
   return(
-    <Card.Root minWidth='300px' maxWidth='500px'>
+    <Card.Root width='430px'>
       <Card.Body>
         Nome: {name} <br/>
         E-mail: {email}
