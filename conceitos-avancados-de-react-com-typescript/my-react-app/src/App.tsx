@@ -3,7 +3,7 @@ import Conta from './pages/Conta'
 import Home from './pages/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Layout } from './components/Layout'
-// import { Layout } from './components/Layout'
+import ContaInfo from './pages/ContaInfo'
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
           <Routes>
             <Route path='/' element={ <Home /> } />
             <Route path='/conta/:id' element={ <Conta /> } />
+            <Route path='/infoconta' element={<ContaInfo />} />
           </Routes>
         </Layout>
       </ChakraProvider>
